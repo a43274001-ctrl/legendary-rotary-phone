@@ -7,10 +7,13 @@
 
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
 <title>
 Faith Academy Ikorodu
 </title>
+
+<link href=".vscode/style.css" rel="stylesheet">
 
 
 <style>
@@ -23,6 +26,12 @@ box-sizing:border-box;
 font-family:Arial,sans-serif;
 
 }
+.meun-btn(
+    display:none;
+    font-size:30px;
+    cursor: pointer;
+    color: white;
+)
 
 
 html{
@@ -112,9 +121,10 @@ rgba(212, 21, 21, 0.4)
 url("schoolbg2.jpeg");
 
 
-background: size 100% 140px;;
+background-size: contain;;
 background-position: center;
 background-repeat: no-repeat;
+background-attachment: fixed;
 display:flex;
 
 flex-direction:column;
@@ -332,7 +342,7 @@ margin-bottom:20px;
 
 
 <header>
-
+    
 
 <div class="logo">
 
@@ -350,12 +360,13 @@ Faith Academy Ikorodu
 
 
 
+<div class="menu-btn">
+<button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+<nav id="navMenu">
 
-<nav>
-
-<a href="#home">
-
-Home
+<a href="#home">Home
 
 </a>
 
@@ -392,11 +403,9 @@ Contact
 
 </a>
 
-
 </nav>
 
-</header>
-
+</div>
 
 </header>
 
@@ -444,7 +453,7 @@ Raising future leaders through excellence in education and Godly values.
 <div>
 
 
-<button class="btn1">
+<button class="btn1" type="button" onclick="window.location.href='https://forms.gle/5g6k1Z7v8x3y9z5A9';">
 
 Apply Now
 
@@ -846,14 +855,13 @@ IKORODU
 
 
 
-📞
-
-08108857062
+📞: 
 
 
-<br>
+<a href="tel:08108857062"> 08108857062,</a>
 
-09093898778
+
+<a href="tel:09093898778"> 09093898778</a>
 
 
 
@@ -862,8 +870,7 @@ IKORODU
 
 
 📧
-
-faithacademymyikorodu2014@gmail.com
+<a href="mailto:faithacademymyikorodu2014@gmail.com" style="text-decoration: none; color: white;">faithacademymyikorodu2014@gmail.com</a>
 
 
 
@@ -924,8 +931,6 @@ faithacademymyikorodu2014@gmail.com
 
 
 </footer>
-
-
 
 </body>
 
